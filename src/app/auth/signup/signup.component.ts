@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatchPassword } from './../../../auth/validators/match-password';
-import { UniqueUsername } from './../../../auth/validators/unique-username';
-import { AuthService } from './../../../auth/auth.service';
 import { Router } from '@angular/router';
+import { AuthService } from './../auth.service';
+import { MatchPassword } from './../validators/match-password';
+import { UniqueUsername } from './../validators/unique-username';
 
 @Component({
   selector: 'app-signup',
