@@ -11,7 +11,7 @@ interface EmailSummary {
   providedIn: 'root'
 })
 export class EmailService {
-  rootUrl: string = 'https://api.angular-email.com';
+  rootUrl = 'https://api.angular-email.com';
   constructor(private http: HttpClient) { }
 
   getEmails() {
