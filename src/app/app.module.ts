@@ -9,7 +9,7 @@ import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,8 +18,9 @@ import { AuthModule } from './auth/auth.module';
     HttpClientModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true }
+    {provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
